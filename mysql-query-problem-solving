@@ -1,0 +1,14 @@
+
+Output all employee names whose FIRST NAME ends with letter N
+
+SELECT first_name, last_name, salary FROM employee WHERE first_name LIKE '%n'; 
+
+
+Output Details of all Employees who get rewards below 5100
+
+SELECT employee.*, reward.amount FROM employee INNER JOIN reward ON employee.id = reward.employee_ref_id WHERE reward.amount < 5100; 
+
+
+Output details of all employees who joined on or before 25th Feb, 2019
+
+SELECT * FROM employee WHERE joining_date <= '2019-02-25'; 
